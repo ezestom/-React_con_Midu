@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState  } from "react";
 import confetti from "canvas-confetti";
 import { Square } from "./components/Square";
 import { TURNS } from "./constants.js";
@@ -6,14 +6,26 @@ import { checkWinnerFrom, checkEndGame } from "./logic/board.js";
 import { WinnerModal } from "./components/WinnerModal";
 
 function App() {
-	const [board, setBoard] = useState(Array(9).fill(null));
-	const [turn, setTurn] = useState(TURNS.X);
+	const [board, setBoard] = useState(() => {
+		const boardFromStorage = window.localStorage.getItem("board");
+		if (boardFromStorage) return JSON.parse(boardFromStorage);
+		return Array(9).fill(null);
+	});
+	const [turn, setTurn] = useState(() => {
+		const turnFromStorage = window.localStorage.getItem("turn");
+		if (turnFromStorage) {
+			return turnFromStorage ?? TURNS.X;
+		}
+	});
 	// null es que no hay ganador, false es que hay un empate
 
 	const resetGame = () => {
 		setBoard(Array(9).fill(null));
 		setTurn(TURNS.X);
 		setWinner(null);
+
+		window.localStorage.removeItem("board");
+		window.localStorage.removeItem("turn");
 	};
 
 	const [winner, setWinner] = useState(null);
@@ -32,6 +44,10 @@ function App() {
 
 		const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X;
 		setTurn(newTurn);
+		// guardar aquí partida
+		window.localStorage.setItem("board", JSON.stringify(newBoard));
+		window.localStorage.setItem("turn", newTurn);
+
 		// revisar si hay un ganador
 		const newWinner = checkWinnerFrom(newBoard);
 		if (newWinner) {
@@ -41,6 +57,7 @@ function App() {
 			setWinner(false);
 		}
 	};
+
 
 	return (
 		<main className="board">
