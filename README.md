@@ -2,6 +2,7 @@
 
 ![image](https://github.com/ezestom/-React_con_Midu/assets/100095709/63252d7a-5c96-4e16-8bc4-8b9f559bce52)
 
+## Temas visto ✔️
 01: Introducción a React
 02: React Hooks: useState y useEffect
 03: Prueba técnica con lo aprendido
