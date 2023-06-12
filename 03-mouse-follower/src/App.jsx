@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+
 const FollowMouse = () => {
 	const [enabled, setEnabled] = useState(false);
 	const [position, setPosition] = useState({ x: 0, y: 0 });
