@@ -1,0 +1,76 @@
+{
+	"Search": [
+		{
+			"Title": "The Incredible Hulk",
+			"Year": "2008",
+			"imdbID": "tt0800080",
+			"Type": "movie",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BMTUyNzk3MjA1OF5BMl5BanBnXkFtZTcwMTE1Njg2MQ@@._V1_SX300.jpg"
+		},
+		{
+			"Title": "Hulk",
+			"Year": "2003",
+			"imdbID": "tt0286716",
+			"Type": "movie",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BMzQwZDg1MGEtN2E5My00ZDJlLWI4MzItM2U2MjJhYzlkNmEzXkEyXkFqcGdeQXVyNDAxNjkxNjQ@._V1_SX300.jpg"
+		},
+		{
+			"Title": "She-Hulk: Attorney at Law",
+			"Year": "2022",
+			"imdbID": "tt10857160",
+			"Type": "series",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BMjU4MTkxNzktNzUyYy00NDM2LWE5NGQtNjJlN2Q0N2MxZDAxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg"
+		},
+		{
+			"Title": "The Incredible Hulk",
+			"Year": "1977–1982",
+			"imdbID": "tt0077031",
+			"Type": "series",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BODc3YTIwY2ItMDU3MS00ZTFlLWJjOTAtNmE4M2M0NWI4MWE1XkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_SX300.jpg"
+		},
+		{
+			"Title": "Planet Hulk",
+			"Year": "2010",
+			"imdbID": "tt1483025",
+			"Type": "movie",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BYmFlNTNhNjktNDQ4NC00ZmVhLTg2NmYtOWExMmI0MzQ1ODFmL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+		},
+		{
+			"Title": "Hulk Vs.",
+			"Year": "2009",
+			"imdbID": "tt1325753",
+			"Type": "movie",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BMTc1NzMzMzU4Nl5BMl5BanBnXkFtZTcwNTQ3NDYwNQ@@._V1_SX300.jpg"
+		},
+		{
+			"Title": "The Incredible Hulk",
+			"Year": "1996–1998",
+			"imdbID": "tt0115215",
+			"Type": "series",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BYmVjYzA3MmYtZjBhOS00OGI5LWIzZTEtOTRkZGY2ZWQ5NjkzXkEyXkFqcGdeQXVyNzMzMjU5NDY@._V1_SX300.jpg"
+		},
+		{
+			"Title": "The Incredible Hulk Returns",
+			"Year": "1988",
+			"imdbID": "tt0095368",
+			"Type": "movie",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BM2Y1MWUxNWUtNzNjZi00NDU3LThhZjAtOWU4YzlkZTYxMzZjXkEyXkFqcGdeQXVyMTEyNzgwMDUw._V1_SX300.jpg"
+		},
+		{
+			"Title": "Hulk and the Agents of S.M.A.S.H.",
+			"Year": "2013–2015",
+			"imdbID": "tt2455514",
+			"Type": "series",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BMTg1MzIxMzM4Nl5BMl5BanBnXkFtZTcwMTg3Mzc5OQ@@._V1_SX300.jpg"
+		},
+		{
+			"Title": "The Trial of the Incredible Hulk",
+			"Year": "1989",
+			"imdbID": "tt0098512",
+			"Type": "movie",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BZDg3NmYwMDQtNTE5MC00NDFlLWI3YjktMWNjZDlkZWVmOWRiXkEyXkFqcGdeQXVyMTg2NjYzOA@@._V1_SX300.jpg"
+		}
+	],
+	"totalResults": "96",
+	"Response": "True"
+}
