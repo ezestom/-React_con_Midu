@@ -1,4 +1,4 @@
-function ListOfMovies({ movies }) {
+function ListOfMovies({ movies,error }) {
 	return (
 		<ul className="movies">
 			{movies.map((movie) => (
@@ -13,7 +13,7 @@ function ListOfMovies({ movies }) {
 }
 
 function NoMoviesResults() {
-	return <p>No se encontraron resultados para esta busqueda</p>;
+	return <p>No movies found</p>;
 }
 
 export function Movies({ movies }) {

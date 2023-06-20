@@ -10,20 +10,10 @@ export const useSearch = () => {
 			return 
 		}
 
-		if (search === "") {
-			setError("No se puede buscar una película vacía");
-			return;
-		}
-		if (search.length < 3) {
+
+		if (search.match(/[!@#$%^&*(),.?":{}|<>]/g)) {
 			setError(
-				"No se puede buscar una película con menos de 3 caracteres"
-			);
-			return;
-		}
-		if (search.match(/[^a-zA-Z ]/g)) {
-			setError(
-				"No se puede buscar una película con caracteres especiales"
-			);
+				"Not found"			);
 			return;
 		}
 		setError(null);

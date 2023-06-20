@@ -1,7 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	position: relative; /* Se agrega posición relativa para que los pseudo-elementos se posicionen correctamente */
+	font-family: "Roboto", sans-serif;
+}
+
+body::before {
+	content: "";
+	position: fixed; /* Para que el pseudo-elemento cubra todo el viewport */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("./assets/img/batman-background2.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.7; /* Aplica la opacidad solo al pseudo-elemento */
+	z-index: -1; /* Para que el pseudo-elemento esté detrás del contenido */
+}
 .page {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+header {
+	width: 100vw;
+	padding: 2rem 25%;
+	display: flex;
+	justify-content: space-between;
 	align-items: center;
 }
 main {
@@ -9,11 +40,29 @@ main {
 	justify-content: center;
 	width: 100vw;
 }
-form{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
+form > legend {
+	font-size: 1rem;
+	color: #ccc;
+	margin-bottom: 1rem;
+}
+form {
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	border-radius: 8px;
+	border: 1px solid #444c56;
+	padding: 0.5rem;
+	height: auto;
+	line-height: 0.5rem;
+}
+form > input {
+	min-height: 50px;
+	border-radius: 8px;
+	border: 1px solid #444c56;
+	padding: 0 1rem;
+	font-size: 1rem;
 }
 
 .movies {
@@ -23,14 +72,45 @@ form{
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	gap: 2rem;
 }
+.movie {
+	padding: 3%;
+	background-color: #22272e;
+	border-radius: 8px;
+	border: 1px solid #444c56;
+}
+.movie:hover {
+	filter: brightness(1.5);
+	border: 1px solid #ccc;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
 .movie img {
 	border-radius: 8px;
-	margin-top: 16px;
+	margin-top: 1rem;
 	width: 100%;
 }
+.movie h3 {
+	padding: 0 0.5rem !important;
+	font-size: 1rem;
+	border-radius: 8px 8px 0 0;
+	height: 70px;
+	display: grid;
+	align-items: center;
+	background-color: #051534;
+	color: #ccc;
+}
 .movie h3,
-p {
+.movie > p {
 	text-align: center;
 	padding: 0;
 	margin: 0;
+	border: 1px solid #444c56;
+}
+.movie + p {
+	border-top: none;
+	font-weight: 500;
+	color: #ccc;
+	font-size: 1rem;
+	background-color: #2d333b;
+	border-radius: 0 0 8px 8px;
 }
