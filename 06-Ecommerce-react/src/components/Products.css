@@ -1,85 +1,96 @@
 .products {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .products ul {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(
-      175px,
-      1fr
-    )
-  );
-  gap: 1rem;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1rem;
 }
 
 .products li {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, .1);
-  border-radius: 4px;
-  background: #111;
-  color: #fff;
-  padding: 1rem;
-  position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	gap: 1rem;
+	box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	background: #111;
+	color: #fff;
+	padding: 1rem;
+	position: relative;
 }
 
 .products h3 {
-  margin: 0;
+	margin: 0;
 }
-.products .title{
-  font-size: 1.25rem;
-  background-color: #242424;
-  padding: 2%;
-  width: 100%;
-  display: inline-block;
-  border-radius: 5px;
+.products .title {
+	font-size: 1.25rem;
+	background-color: #242424;
+	padding: 2%;
+	width: 100%;
+	display: inline-block;
+	border-radius: 5px;
 }
 .products .price {
-  font-size: 1.25rem;
-  background-color: #242424;
-  padding: 2%;
-  border-radius: 5px;
-  font-weight: 700;
+	font-size: 1.25rem;
+	background-color: #242424;
+	padding: 2%;
+	border-radius: 5px;
+	font-weight: 700;
 }
-.products .rating{
-  color: yellow;
+.products .rating {
+	font-size: 1rem;
+	background-color: #242424;
+	padding: 1rem;
+	border-radius: 5px;
+	font-weight: 700;
+	color: yellow;
 }
 
 .products span {
-  font-size: 1rem;
-  opacity: .9;
+	font-size: 1rem;
+	opacity: 0.9;
 }
 
 .products img {
-  border-radius: 4px;
-  width: 100%;
-  aspect-ratio: 16/9;
-  display: block;
-  object-fit: cover;
-  background: #fff;
+	border-radius: 4px;
+	width: 100%;
+	aspect-ratio: 16/9;
+	display: block;
+	object-fit: cover;
+	background: #fff;
 }
-button svg{
-   color: #fff;
-   position: absolute;
+button svg {
+	color: #fff;
+	position: absolute;
 }
+p.description {
+	padding-bottom: 30%;
+}
+.btn-container {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	align-items: center;
+	width: 100%;
+	bottom: 0;
+	gap: 1rem;
+}
+
 button {
-  position: absolute;
-  width: 2rem;
-  height: 2.25rem;
-  top: 1rem;
-  right: 1rem;
-  background: #111;
-  border: none;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: .3s;
+	width: 5rem;
+	height: 3.5rem;
+	background: #111;
+	/* border: none; */
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.3s;
 }

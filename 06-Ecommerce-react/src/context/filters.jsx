@@ -1,23 +1,22 @@
-import { createContext, useState} from "react";
+import { createContext, useState } from "react";
 
-//1. Create context
-export const FilterContext = createContext();
 
-//2. Create provider, consumer and export
-export function FilterProvider({ children }) {
+//1. Este es el que tenemos que consumir
+export const FiltersContext = createContext();
+
+//2. Este es el que nos provee de acceso al contexto
+export function FiltersProvider({ children }) {
 	const [filters, setFilters] = useState({
-		minPrice: 0,
 		category: "all",
+		minPrice: 1000,
 	});
 	return (
-		<FilterContext.Provider
-			value={
-				{
-					filters,
-					setFilters,
+		<FiltersContext.Provider
+			value={{
+				filters,
+				setFilters,
 			}}>
 			{children}
-			
-		</FilterContext.Provider>
+		</FiltersContext.Provider>
 	);
 }
