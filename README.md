@@ -1,4 +1,4 @@
-# -React_con_Midu
+# React_con_Midu
 
 ![image](https://github.com/ezestom/-React_con_Midu/assets/100095709/63252d7a-5c96-4e16-8bc4-8b9f559bce52)
 

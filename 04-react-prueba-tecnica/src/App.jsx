@@ -23,7 +23,7 @@ export function App() {
 				{imageUrl && 
 					<img
 						src= {imageUrl}
-						alt={`imgage extracted using the first three words for ${fact}`}
+						alt={`image extracted using the first three words for ${fact}`}
 					/>
 				}
 			</article>
