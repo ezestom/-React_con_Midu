@@ -1,6 +1,6 @@
 import "./App.css";
 import { useMovies } from "./hooks/useMovies";
-import { Movies } from "./components/movies";
+import { Movies } from "../components/movies";
 import { useCallback, useEffect, useState } from "react";
 import { useSearch } from "./hooks/useSearch";
 import debounce from "just-debounce-it";
