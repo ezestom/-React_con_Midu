@@ -1,6 +1,7 @@
 import "./App.css";
 import { useMovies } from "./hooks/useMovies";
-import { Movies } from "../components/movies";
+import {Movies} from "./components/Movies";
+
 import { useCallback, useEffect, useState } from "react";
 import { useSearch } from "./hooks/useSearch";
 import debounce from "just-debounce-it";
@@ -14,7 +15,7 @@ function App() {
 		event.preventDefault();
 		getMovies({ search });
 	};
-	const debounceGetMovies = useCallback(		
+	const debounceGetMovies = useCallback(
 		debounce((search) => getMovies({ search }), 500),
 		[getMovies]
 	);
@@ -50,15 +51,15 @@ function App() {
 						checked={sort}
 					/>
 					<button type="submit">Search</button>
-				{error && (
-					<p
-						style={{
-							color: "red",
-						}}>
-						{" "}
-						{error}
-					</p>
-				)}
+					{error && (
+						<p
+							style={{
+								color: "red",
+							}}>
+							{" "}
+							{error}
+						</p>
+					)}
 				</form>
 			</header>
 

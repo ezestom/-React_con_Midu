@@ -21,3 +21,4 @@ export function Movies({ movies }) {
 
 	return hasMovies ? <ListOfMovies movies={movies} /> : <NoMoviesResults />;
 }
+ 
