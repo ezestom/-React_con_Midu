@@ -16,3 +16,5 @@ Haz uso de useContext para evitar pasar por props inncesarias
 -Haz que se puedaan modicar la cantidad de productos del carrito
 -Sincronizar los cambios del carrito con la lista de productos
 -Guarda en un localStorage el carrito para que se recupere al recagar la página
+
+![Alt text](image.png)
