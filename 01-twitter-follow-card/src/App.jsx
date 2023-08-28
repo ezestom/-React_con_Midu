@@ -13,8 +13,8 @@ const users = [
 		isFollowing: true,
 	},
 	{
-		userName: "ivana soledad",
-		name: "Schmidt",
+		userName: "Messi",
+		name: "Lionel Messi",
 		isFollowing: false,
 	},
 	{
